@@ -36,7 +36,7 @@ def image_template(
         cloudinary_options.append("c_fill")
 
     if not url_parts.netloc:
-        raise Exception("url must contain a hostname")
+        raise Exception("url(" + url + ") must contain a hostname")
 
     std_def_cloudinary_options = cloudinary_options.copy()
     hi_def_cloudinary_options = cloudinary_options.copy()
